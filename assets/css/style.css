@@ -1,0 +1,194 @@
+/* --------------------------------------------------------------
+Import de la font Montserrat depuis Google Fonts
+-------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* --------------------------------------------------------------
+Layout de la page
+-------------------------------------------------------------- */
+
+/* 1 - Déclarations CSS qui seront hérités par l'ensemble des éléments html enfant */
+selecteur {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+}
+
+/* --------------------------------------------------------------
+Header
+-------------------------------------------------------------- */
+
+/*2 - Déclarations CSS qui s'appliquent à l'en-tête du site */
+selecteur {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #ddd;
+    color: #ccc;
+    padding: 2em 0;
+}
+
+/*3 - Déclarations CSS qui centre le titre de la page */
+selecteur {
+    text-align: center;
+}
+
+/* 4 - Déclarations CSS qui remplace le mot "Pantone" par son logo dans le titre */
+selecteur {
+    height: 43px;
+    width: 250px;
+    background: url(../img/Logo-Pantone.png) no-repeat;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    text-indent: -999em;
+}
+
+/* --------------------------------------------------------------
+Contenu histoire et principe du Pantone
+-------------------------------------------------------------- */
+
+/* 5 - Déclarations CSS qui s'applique au conteneur des blocs histoire et principe */
+selecteur {
+    width: 60vw;
+    margin: auto;
+}
+
+/* 6 - Déclarations CSS qui s'appliquent à l'ensemble des éléments html <mark> */
+selecteur {
+    border-radius: 3px;
+    padding: 0 0.25em;
+}
+
+/* 7 - Les déclarations CSS des 4 sélecteurs qui suivent attribuer leur couleurs
+   aux mots cyan, magenta, jaune et noir contenus dans des éléments <mark> */
+selecteur {
+    background: cyan;
+}
+
+selecteur {
+    background: magenta;
+}
+
+selecteur {
+    background: yellow;
+}
+
+selecteur {
+    background: black;
+    color: white;
+}
+
+/* --------------------------------------------------------------
+Styles pantone of the year
+-------------------------------------------------------------- */
+
+/*8 - Déclarations CSS qui permet d'organiser tous les éléments HTML 
+   contenant les informations sur le Pantone de l'année sous forme de grille */
+
+selecteur {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+/* 9-  Déclarations CSS qui doivent appliquer une mise en forme 
+   à tous les titres des blocs Pantone de l'année 
+    > permet de cibler les éléments enfants direct. ici on cible les h3 qui sont des enfants direct de la div qui a la classe .pantone-of-the-year-item
+
+*/
+
+selecteur {
+    height: 2.5em;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.25em;
+}
+
+/* 10 - Déclarations CSS qui doivent appliquer une mise en forme 
+   à toutes les références des blocs Pantone de l'année 
+.selecteur .selecteur cible tous les éléments qui sont des enfants d'un autre.
+   */
+
+selecteur {
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 11 - Déclarations CSS qui doivent appliquer une mise en forme 
+   à toutes les descriptions des blocs Pantone de l'année
+   (indice : utiliser un combinateur +) 
+   + permet de cibler les éléments qui suivent directement un autre.
+   ici on cible le p qui suit directement le ref et qui est contenu dans la div qui a la classe .pantone-of-the-year-item
+   */
+
+selecteur {
+    font-size: 0.75em;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+/* 12 - Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2020 */
+selecteur {
+    background: #0f4c81;
+}
+
+/* 13 - Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2019 */
+selecteur {
+    background: #ff6f61;
+}
+
+/* 14 - Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2018 */
+selecteur {
+    background: #604c8d;
+}
+
+/* 15 - Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2017 */
+selecteur {
+    background: #88b04b;
+}
+
+/* 16 - Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2016 
+   : est un pseudo-classe qui permet de cibler un élément lors d'un événement.
+   ici on cible le h3 lors d'un survol.
+   vous pouvez utiliser  :active pour le clic :hover pour le survole
+   */
+selecteur {
+    background: rgb(147, 169, 209);
+    background: linear-gradient(90deg, rgba(147, 169, 209, 1) 0%, rgba(147, 169, 209, 1) 50%, rgba(247, 202, 202, 1) 50%, rgba(247, 202, 202, 1) 100%);
+}
+
+/* BONUS : faire en sorte que la couleur des titres des blocs 
+Pantone de l'année deviennent de la couleur associée au survol des blocs 
+indice : utiliser les pseudo-classes  :hover sur les h3 des différents blocs
+*/
+
+selecteur {
+    background: #0f4c81;
+}
+selecteur {
+    background: #ff6f61;
+}
+selecteur {
+    background: #604c8d;
+}
+selecteur {
+    background: #88b04b;
+}
+selecteur {
+    background: rgb(147, 169, 209);
+    background: linear-gradient(90deg, rgba(147, 169, 209, 1) 0%, rgba(147, 169, 209, 1) 50%, rgba(247, 202, 202, 1) 50%, rgba(247, 202, 202, 1) 100%);
+}
